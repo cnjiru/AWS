@@ -5,7 +5,6 @@ resource "aws_instance" "myec2" {
   
   # Associate the instance with the VPC's default subnet
   #subnet_id = tolist(data.aws_vpc.selected.subnets)[0]
-
   tags = {
     Environment = "stage"
   }
