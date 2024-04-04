@@ -36,11 +36,6 @@ variable "role" {
   type        = string
 }
 
-variable "instance_number" {
-  description = "Instance number to differentiate between instances of the same role"
-  type        = string
-}
-
 variable "region" {
   description = "AWS region where the instance is deployed"
   type        = string
