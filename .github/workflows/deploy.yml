@@ -30,7 +30,7 @@ jobs:
 
       - name: Terraform Format and Validate
         run: |
-          terraform fmt -check
+          terraform fmt
           terraform validate
         working-directory: ./terraform
 
