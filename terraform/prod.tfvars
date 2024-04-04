@@ -1,0 +1,6 @@
+company_prefix  = "cnjiru"
+environment     = "p"
+application     = "shop"
+role            = "app"
+instance_number = "01"
+region          = "us-east-1"
