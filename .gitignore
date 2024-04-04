@@ -2,5 +2,3 @@
 **/.terragrunt-cache/**
 *.tfstate*
 *local*.tfvars
-testmodule/.terraform.lock.hcl
-CD
