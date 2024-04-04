@@ -1,6 +1,3 @@
-company_prefix  = "cnjiru"
-environment     = "p"
-application     = "shop"
-role            = "app"
-instance_number = "01"
+nm_prefix  = "usst1"
+ec2_environment     = "p"
 region          = "us-east-1"
