@@ -1,4 +1,5 @@
 resource "aws_security_group" "sg" {
+  name        = var.sg_name
   count       = var.create_security_groups ? length(var.security_groups) : 0
   vpc_id      = var.vpc_id
   description = element(values(var.security_groups), count.index).description

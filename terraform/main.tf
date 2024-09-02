@@ -36,6 +36,7 @@ module "vpc" {
 module "security_groups" {
   source = "./modules/security_group"
 
+  sg_name = "jenkins-sg"
   vpc_id                 = module.vpc.vpc_id
   create_security_groups = true
 
@@ -43,8 +44,14 @@ module "security_groups" {
     "http_sg" = {
       description = "Allow HTTP traffic"
       ingress = [{
-        from_port   = 80
-        to_port     = 80
+        from_port   = 22
+        to_port     = 22
+        protocol    = "tcp"
+        cidr_blocks = ["0.0.0.0/0"]
+      }]
+      ingress = [{
+        from_port   = 8080
+        to_port     = 8080
         protocol    = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
       }]
