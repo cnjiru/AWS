@@ -41,3 +41,8 @@ variable "region" {
   type        = string
   default     = "us-east-1" # Set to your default region if needed
 }
+
+variable "securitygp" {
+  type = string
+  description = "ec2 sec group"
+}

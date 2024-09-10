@@ -6,13 +6,13 @@ variable "instance_type" {
 variable "nm_prefix" {
   description = "Prefix indicating the company or project"
   type        = string
-  default = "chakara"
+  default     = "chakara"
 }
 
 variable "ec2_environment" {
   description = "Deployment environment (e.g., prod, staging, dev)"
   type        = string
-  default = "prod"
+  default     = "prod"
 }
 
 variable "ec2_instance_count" {
